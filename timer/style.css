@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+
+body{
+  background-color: black;
+  background-image: url(./halloween.jpg);
+  background-size: 100% auto;
+  background-position: 0% -10%;
+  background-repeat: no-repeat;
+}
+
+.title {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+.title > .sub {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title > .main {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.countdown-box {
+  display: flex;
+  height: 10rem;
+  width: 100%;
+  padding: 0 3%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+}
+
+.countdown-box > .date-box {
+  width: 23%;
+  vertical-align: center;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.digit {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.char {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: -1rem;
+}
