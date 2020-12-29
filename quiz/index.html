@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Quiz</title>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="header">
+    </div>
+    <div class="former">
+      <div class="information-container">
+        <div class="score-board">
+          <div class="correct">
+            <i class="fas fa-check"></i>
+            &nbsp;
+            <span class="number" id="count-correct">
+              0
+            </span>
+            correct
+          </div>
+          <div class="wrong">
+            <i class="fas fa-times"></i>
+            &nbsp;
+            <span class="number" id="count-wrong">
+              0
+            </span>
+            wrong
+          </div>
+        </div>
+        <div class="timer">
+          <i class="far fa-clock"></i>
+          &nbsp;
+          <span class="number" id="minute">
+            00
+          </span>
+          :
+          <span class="number" id="second">
+            00
+          </span>
+        </div>
+      </div>
+      <div class="question-container">
+        <div class="problem-container">
+          Question <span id="count-question">0</span>
+          (<span id="count-remaining">00</span>
+          remaining)
+         <div class="problem">
+           problem
+         </div>
+        </div>
+        <div class="answer-container">
+          Answer options
+          <input type="radio" id="ch1" name="choice" value="a" />
+          <label for="ch1">
+            <span class="answer-number">A</span> <span id="a">answer</span>
+          </label>
+          <input type="radio" id="ch2" name="choice" value="b" />
+          <label for="ch2">
+            <span class="answer-number">B</span> <span id="b">answer</span>
+          </label>
+          <input type="radio" id="ch3" name="choice" value="c" />
+          <label for="ch3">
+            <span class="answer-number">C</span> <span id="c">answer</span>
+          </label>
+        </div>
+      </div>
+      <div class="submit-container">
+          <button id="pass">Answer Later</button>
+          <button id="send">Send Answer</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
