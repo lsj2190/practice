@@ -78,7 +78,7 @@ body {
   flex-direction: column;
 }
 
-.problem {
+#problem {
   color: #6A6E6F;
   margin-top: 10px;
   font-size: 1.5rem;
