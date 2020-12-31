@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #faf0f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.recipe-container {
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px 8px rgba(207, 207, 207, 0.2);
+}
+
+.banner {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    align-items: center;
+    color: orange;
+    font-family: 'Langar', cursive;
+    padding: 0 20px;
+}
+
+.random, .search {
+    font-size: 1.3rem;
+    color: rgb(194, 190, 190);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-container {
+    position: relative;
+    height: 55%;
+    overflow: hidden;
+    margin: 20px 20px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    box-shadow: 0 3px 10px 4px rgba(207, 207, 207, 0.5);
+}
+
+.main-container > img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.main-container .detail {
+    padding: 7px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container i {
+    font-size: 1rem;
+    color: rgb(163, 160, 160);
+    cursor: pointer;
+}
+
+.view-recipe {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    color: gray;
+    padding: 1px 10px 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fav-container {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5e9ff; 
+    padding: 5px 0px;
+}
+
+.left-btn, .right-btn {
+    color: orange;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fav-container ul {
+    list-style: none outside;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+.fav-food {
+    width: 75px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+    margin: 2px;
+    border-radius: 8px;;
+}
+
+.fav-food > img {
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 0 3px 4px 4px rgba(207, 207, 207, 0.5);
+    cursor: pointer;
+}
+
+.fav-food .delete {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: red;
+    cursor: pointer;
+}
+
+.fav-food .detail {
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.fav-food:hover {
+    background-color: white;
+    border: 2px solid orange;
+}

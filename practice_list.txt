@@ -1,10 +1,17 @@
 1. Timer
   https://uidesigndaily.com/posts/photoshop-countdown-timer-day-165
-  -countdown
-  -future date
+  - countdown
+  - future date
 
 2. Questionaire
  https://uidesigndaily.com/posts/photoshop-driving-questionnaire-choice-submit-day-292
  - answer options
  - countdown
  - confirm correct answer
+
+3. Recipe
+ https://uidesigndaily.com/posts/sketch-recipe-app-food-mobile-day-615
+ https://uidesigndaily.com/posts/sketch-recipe-components-subscribe-tags-card-rating-day-1145
+ - get random recipe from https://www.themealdb.com/api.php
+ - search recipe from https://www.themealdb.com/api.php
+ - add favorite food
