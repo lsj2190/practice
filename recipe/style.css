@@ -118,13 +118,17 @@ body {
     width: 75px;
     height: 120px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 2px;
     border-radius: 8px;;
 }
 
-.fav-food > img {
-    margin-top: 15px;
+.fav-img {
+    margin-top: 0px;
     width: 60px;
     height: 60px;
     border: 1px solid white;
@@ -147,7 +151,7 @@ body {
 }
 
 .fav-food .detail {
-    font-size: 10px;
+    font-size: 7px;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -171,7 +175,7 @@ body {
 }
 
 .recipe-card {
-    margin: 20px 0;
+    margin: 10px 0;
     background-color: white;
     width: 500px;
     height: 90vh;
@@ -181,8 +185,13 @@ body {
     top: 0;
     border-radius: 10px;
     box-shadow: 0 3px 4px 4px rgba(207, 207, 207, 0.5);
-    padding: 20px;
+    padding: 5px 20px;
     visibility: hidden;
+}
+
+.recipe-card > h4 {
+    color: rgb(163, 160, 160);
+    font-size: 0.7rem;
 }
 
 #recipe-close {
