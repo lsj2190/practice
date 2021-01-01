@@ -61,10 +61,12 @@ body {
 }
 
 .main-container .detail {
-    padding: 7px 20px 0;
+    height: 19%;
+    padding: 0px 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.6rem;
 }
 
 .main-container i {
@@ -130,7 +132,12 @@ body {
     cursor: pointer;
 }
 
-.fav-food .delete {
+.delete {
+    visibility: hidden;
+}
+
+.fav-food:hover .delete {
+    visibility: visible;
     position: absolute;
     top: 3px;
     right: 3px;
